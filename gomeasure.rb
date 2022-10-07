@@ -5,12 +5,12 @@
 class Gomeasure < Formula
   desc "A tool to measure the content of your codebase"
   homepage "https://github.com/lordvidex/gomeasure"
-  version "0.2"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/lordvidex/gomeasure/releases/download/v0.2/gomeasure_0.2_darwin_all.tar.gz"
-    sha256 "11db5bcae30b7e040b20d05f7273b5ae74c7818ada2074e7a893a082154d1360"
+    url "https://github.com/lordvidex/gomeasure/releases/download/v0.2.1/gomeasure_0.2.1_darwin_all.tar.gz"
+    sha256 "f5359eb6e9e003de66d498c648d8a5a572f8efbf457e818dede4eae1167225d4"
 
     def install
       bin.install "gomeasure"
@@ -19,16 +19,16 @@ class Gomeasure < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lordvidex/gomeasure/releases/download/v0.2/gomeasure_0.2_linux_arm64.tar.gz"
-      sha256 "10d14620963546527e938b08fc3a35d24ee6cc23075bfdcbf0cfb8d2ca37bc48"
+      url "https://github.com/lordvidex/gomeasure/releases/download/v0.2.1/gomeasure_0.2.1_linux_arm64.tar.gz"
+      sha256 "1e5e5f0e0deedff94949ec780061c8675bbbd23568986aeb4ac315acb19a5903"
 
       def install
         bin.install "gomeasure"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lordvidex/gomeasure/releases/download/v0.2/gomeasure_0.2_linux_amd64.tar.gz"
-      sha256 "4dd27af76b1497e84d3d27f9338eddbcded5f5fc5b30b82b8703c2ee4b5ee90d"
+      url "https://github.com/lordvidex/gomeasure/releases/download/v0.2.1/gomeasure_0.2.1_linux_amd64.tar.gz"
+      sha256 "7b3f06a04f812a07b4064f3f714ed5df0f6bf1adbffaadad214bc4a2d99a0d11"
 
       def install
         bin.install "gomeasure"
